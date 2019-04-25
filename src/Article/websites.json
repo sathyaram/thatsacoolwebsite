@@ -1,0 +1,144 @@
+[
+  {
+    "name" : "Vox",
+    "link" : "vox.com",
+    "color" : "yellow",
+    "category" : "Web Design",
+    "description" : "Look the parallax effect!"
+  },
+  {
+    "name" : "Sean Halpin",
+    "link" : "seanhalpin.io",
+    "color" : "#12d7a0",
+    "category" : "Web Designer",
+    "description" : "Elegant, flat design and great palette.",
+    "class" : "white"
+  },
+  {
+    "name" : "Taproot",
+    "link" : "taproot.agency",
+    "color" : "#ea5f3d",
+    "category" : "Agency",
+    "description" : "Beautiful case studies.",
+    "class" : "white"
+  },
+  {
+    "name" : "Wewe Liu",
+    "link" : "iamliu.com/",
+    "color" : "#145d55",
+    "category" : "Freelancer",
+    "description" : "Gorgeous hero section.",
+    "class" : "white"
+  },
+  {
+    "name" : "Melanie F",
+    "link" : "melanie-f.com",
+    "color" : "#75bee8",
+    "category" : "Freelancer",
+    "description" : "Amazing feel and music."
+  },
+  {
+    "name" : "Marina Tureczek",
+    "link" : "marinatureczek.com",
+    "color" : "#b7b6ef",
+    "category" : "Designer",
+    "description" : "Incredible website."
+  },
+  {
+    "name" : "Parallax",
+    "link" : "parall.ax",
+    "color" : "#7c2580",
+    "category" : "Agency",
+    "description" : "Amazing color palette!",
+    "class" : "white"
+  },
+  {
+    "name" : "Claudio Calautti",
+    "link" : "claudiocalautti.cc",
+    "color" : "teal",
+    "category" : "Developer",
+    "description" : "Creative javascript animations",
+    "class" : "white"
+  },
+  {
+    "name" : "Jenny Johannesson",
+    "link" : "jennyjohannesson.com",
+    "color" : "#fc0564",
+    "category" : "Designer",
+    "description" : "Unbelievable clients and work.",
+    "class" : "white"
+  },
+  {
+    "name" : "Nathan Riley",
+    "link" : "nrly.co",
+    "color" : "#1a1a1a",
+    "category" : "Designer",
+    "description" : "Unbelievable clients and work.",
+    "class" : "white"
+  },
+  {
+    "name" : "Gal Shir",
+    "link" : "galshir.com",
+    "color" : "white",
+    "category" : "Designer",
+    "description" : "Unbelievable clients and work."
+  },
+  {
+    "name" : "Elegant Seagulls",
+    "link" : "elegantseagulls.com",
+    "color" : "#e6f03a",
+    "category" : "Designer",
+    "description" : "Unbelievable clients and work."
+  },
+  {
+    "name" : "Tobias Ahlin",
+    "link" : "tobiasahlin.com",
+    "color" : "#1880a8",
+    "category" : "UI Developer",
+    "description" : "Unbelievable clients and work."
+  },
+  {
+    "name" : "Push10",
+    "link" : "push10.com",
+    "color" : "#f9970a",
+    "category" : "Agency",
+    "description" : "Unbelievable clients and work."
+  },
+  {
+    "name" : "Rogie",
+    "link" : "rog.ie",
+    "color" : "#df90ea",
+    "category" : "Freelancer",
+    "description" : "Unbelievable clients and work."
+  },
+  {
+    "name" : "WeAreFine",
+    "link" : "wearefine.com",
+    "color" : "#131346",
+    "category" : "Freelancer",
+    "description" : "Unbelievable clients and work.",
+    "class" : "white"
+  },
+  {
+    "name" : "Fantasy",
+    "link" : "fantasy.co",
+    "color" : "#fb0c05",
+    "category" : "Agency",
+    "description" : "God-tier design work",
+    "class" : "white"
+  },
+  {
+    "name" : "Noodle.ai",
+    "link" : "noodle.ai",
+    "color" : "#ffd900",
+    "category" : "Service",
+    "description" : "Geometric, tiled flat design, very slick"
+  },
+  {
+    "name" : "We Ain't Plastic",
+    "link" : "http://weaintplastic.com/",
+    "color" : "#f2f2f2",
+    "category" : "Agency",
+    "description" : "Simple, clean, minimalistic perfection"
+  }
+]

@@ -1,0 +1,15 @@
+main { 
+  width: calc(100% - 135px);
+  margin-left: 135px;
+  height:100vh;
+  // overflow: hidden;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-flow: column wrap;
+    height: 100%;
+    width: auto;
+  }
+}
