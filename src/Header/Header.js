@@ -6,9 +6,9 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div>
-          <h1>i</h1>
-          <h2>That's a Cool Website</h2>
+        <div className="branding">
+          <h2>i</h2>
+          <h1>That's a<br></br> <span>Cool</span> <br></br>Website</h1>
         </div>
         <nav>
           <ul>
@@ -24,7 +24,7 @@ class Header extends Component {
           </ul>
         </nav>
         <div className="addWebsite">
-          <a href="#" className="addThis"> <i class="fas fa-plus"></i></a>
+          <a  className="addThis"> <i class="fas fa-plus"></i></a>
           <Form />
         </div>
       </header>
