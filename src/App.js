@@ -5,17 +5,6 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      color: "",
-      name: "name",
-      url: "url",
-      image: "image"
-    };
-  }
-
   render() {
     return (
       <div className="page">

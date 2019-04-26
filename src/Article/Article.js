@@ -1,49 +1,63 @@
-import React, { Component } from 'react';
-import './Article.scss';
-import myData from './websites.json';
+import "./Article.scss";
+import React from "react";
 
-class Article extends Component {
-
-  editText = () => {
-    let edit = document.querySelector(".website");
-    edit.classList.toggle("editable");
-  };
-
-  render() {
-    return (
-      myData.map(website => (
-      <article className={'website ' + website.class} style={{backgroundColor:`${website.color}`}}>
-        <a className="website-wrapper" href={'http://' + website.link} target="_blank" ></a>
-        <div className="text-wrapper">
-            <div class="text-collapsed">
-              <div>
-                <input className="category" type="text" list="cats" value={website.category}></input>
-                  <datalist id="cats">
-                    <option value="Functionality"></option>
-                    <option value="Web Design"></option>
-                    <option value="Agency"></option>
-                    <option value="Company"></option>
-                  </datalist>
-                <input className="color logged-in" type="color" name="colorpicker" value={website.color}></input>
-              </div>
-            </div>
-            <div className="text-shown">
-              <input className="title" type="text" value={website.name}></input>
-              <input className="link" type="text" value={website.link}></input>
-            </div>
-            <div className="text-collapsed">
-              <textarea className="desc" type="text">{website.description}</textarea> 
-            </div>
+const Article = props => {
+  return (
+    <article
+      className={"website " + props.website.class}
+      style={{ backgroundColor: `${props.website.color}` }}
+    >
+      <a
+        className="website-wrapper"
+        href={"http://" + props.website.link}
+        target="_blank"
+      />
+      <div className="text-wrapper">
+        <div class="text-collapsed">
+          <div>
+            <input
+              className="category"
+              type="text"
+              list="cats"
+              value={props.website.category}
+            />
+            <datalist id="cats">
+              <option value="Functionality" />
+              <option value="Web Design" />
+              <option value="Agency" />
+              <option value="Company" />
+            </datalist>
+            <input
+              className="color logged-in"
+              type="color"
+              name="colorpicker"
+              value={props.website.color}
+            />
+          </div>
         </div>
-        <div className="controls logged-in">
-            <button className="save"><i className="fas fa-save"></i></button>
-            <button className="edit" onClick={this.editText}><i className="fas fa-edit"></i></button>
-            <button className="delete"><i className="fas fa-trash"></i></button>
+        <div className="text-shown">
+          <input className="title" type="text" value={props.website.name} />
+          <input className="link" type="text" value={props.website.link} />
         </div>
-      </article>
-      ))
-    );
-  }
-}
+        <div className="text-collapsed">
+          <textarea className="desc" type="text">
+            {props.website.description}
+          </textarea>
+        </div>
+      </div>
+      <div className="controls logged-in">
+        <button className="save">
+          <i className="fas fa-save" />
+        </button>
+        <button className="edit">
+          <i className="fas fa-edit" />
+        </button>
+        <button className="delete">
+          <i className="fas fa-trash" />
+        </button>
+      </div>
+    </article>
+  );
+};
 
 export default Article;

@@ -95,7 +95,8 @@
     "link" : "tobiasahlin.com",
     "color" : "#1880a8",
     "category" : "UI Developer",
-    "description" : "Unbelievable clients and work."
+    "description" : "Unbelievable clients and work.",
+    "class" : "white"
   },
   {
     "name" : "Push10",
@@ -135,10 +136,47 @@
     "description" : "Geometric, tiled flat design, very slick"
   },
   {
+    "name" : "Marion Serenio",
+    "link" : "marionserenio.com",
+    "color" : "#eee197",
+    "category" : "UI/UX Designer",
+    "description" : "Wicked innovative and talented designer"
+  },
+  {
+    "name" : "BERT",
+    "link" : "wearebert.com/nl/",
+    "color" : "#00d185",
+    "category" : "Agency",
+    "description" : "Clean, interactive site"
+  },
+  {
     "name" : "We Ain't Plastic",
     "link" : "weaintplastic.com",
     "color" : "#f2f2f2",
     "category" : "Agency",
     "description" : "Simple, clean, minimalistic perfection"
+  },
+  {
+    "name" : "Fabian Irsara",
+    "link" : "fabianirsara.com",
+    "color" : "#b2a578",
+    "category" : "UI Developer",
+    "description" : "Incredible developer, designer, and photographer"
+  },
+  {
+    "name" : "Huge Inc.",
+    "link" : "www.hugeinc.com",
+    "color" : "#e9168c",
+    "category" : "Agency",
+    "description" : "Next level designs and development",
+    "class" : "white"
+  },
+  {
+    "name" : "Jennifer Heintz",
+    "link" : "jenniferheintz.com",
+    "color" : "#018d52",
+    "category" : "Agency",
+    "description" : "Designer and Illustrator",
+    "class" : "white"
   }
 ]
