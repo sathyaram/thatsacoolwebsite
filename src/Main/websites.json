@@ -178,5 +178,21 @@
     "category" : "Agency",
     "description" : "Designer and Illustrator",
     "class" : "white"
+  },
+  {
+    "name" : "Rafael Caferati",
+    "link" : "caferati.me/",
+    "color" : "#2f2f2f",
+    "category" : "Full Stack Developer",
+    "description" : "Super cool site with a CSS/JS game, very fun!",
+    "class" : "white"
+  },
+  {
+    "name" : "Ben Davidson",
+    "link" : "milkisnice.com/",
+    "color" : "#b00e23",
+    "category" : "Full Stack Developer",
+    "description" : "Very modern, geometric site with moving components",
+    "class" : "white"
   }
 ]
