@@ -1,7 +1,13 @@
 main { 
-  width: calc(100% - 135px);
-  margin-left: 135px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
   height:100vh;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+  }
   // overflow: hidden;
 
   > div {

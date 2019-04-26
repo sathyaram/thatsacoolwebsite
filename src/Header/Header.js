@@ -6,27 +6,27 @@ class Header extends Component {
   render() {
     return (
       <header>
+        <div>
+          <h1>i</h1>
+          <h2>The Coolest Websites</h2>
+        </div>
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>   
-            </li>
-            <li>
-              <a href="#">Explore</a>
+              <a href="#">Sign Up</a>
             </li>
             <li>
               <a href="#">Login</a> 
             </li>
             <li>
-              <a href="#">Sign Up</a>
+              <a href="#">Explore</a>
             </li>
           </ul>
         </nav>
-        <div>
-          <h1>inspired.<span>af</span></h1>
-          <h2>Your Web, One Place.</h2>
+        <div className="addWebsite">
+          <a href="#" className="addThis"> <i class="fas fa-plus"></i></a>
+          <Form />
         </div>
-        <Form />
       </header>
     );
   }
