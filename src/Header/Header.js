@@ -8,7 +8,7 @@ class Header extends Component {
       <header>
         <div>
           <h1>i</h1>
-          <h2>The Coolest Websites</h2>
+          <h2>That's a Cool Website</h2>
         </div>
         <nav>
           <ul>
