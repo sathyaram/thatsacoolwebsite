@@ -13,8 +13,7 @@ const Article = props => {
         target="_blank"
       />
       <div className="text-wrapper">
-        <div class="text-collapsed">
-          <div>
+          <div class="text-above">
             <input
               className="category"
               type="text"
@@ -27,23 +26,23 @@ const Article = props => {
               <option value="Agency" />
               <option value="Company" />
             </datalist>
-            <input
+            {/* <input
               className="color logged-in"
               type="color"
               name="colorpicker"
               value={props.website.color}
-            />
-          </div>
+            /> */}
+            <input className="link" type="text" value={props.website.link} />
+
         </div>
         <div className="text-shown">
           <input className="title" type="text" value={props.website.name} />
-          <input className="link" type="text" value={props.website.link} />
-        </div>
-        <div className="text-collapsed">
           <textarea className="desc" type="text">
             {props.website.description}
           </textarea>
         </div>
+        <div className="text-collapsed">
+            </div>
       </div>
       <div className="controls logged-in">
         <button className="save">

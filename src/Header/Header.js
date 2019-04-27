@@ -7,10 +7,12 @@ class Header extends Component {
     return (
       <header>
         <div className="branding">
-          <h2>i</h2>
-          <h1>That's a<br></br> <span>Cool</span> <br></br>Website</h1>
+          <a href="/" className="home">
+          <h1>That's a<br></br> <div className="logo">Cool</div> <br></br>Website</h1>
+          </a>
+          <p>A Curated Collection of Agency & Portfolio Websites</p>
         </div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <a href="#">Sign Up</a>
@@ -22,11 +24,11 @@ class Header extends Component {
               <a href="#">Explore</a>
             </li>
           </ul>
-        </nav>
-        <div className="addWebsite">
+        </nav> */}
+        {/* <div className="addWebsite">
           <a  className="addThis"> <i class="fas fa-plus"></i></a>
           <Form />
-        </div>
+        </div> */}
       </header>
     );
   }
