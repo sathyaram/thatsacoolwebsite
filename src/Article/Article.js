@@ -11,9 +11,10 @@ const Article = props => {
         className="website-wrapper"
         href={"http://" + props.website.link}
         target="_blank"
+        rel="noopener noreferrer"
       />
       <div className="text-wrapper">
-          <div class="text-above">
+          <div className="text-above">
             <input
               className="category"
               type="text"
@@ -37,9 +38,7 @@ const Article = props => {
         </div>
         <div className="text-shown">
           <input className="title" type="text" value={props.website.name} />
-          <textarea className="desc" type="text">
-            {props.website.description}
-          </textarea>
+          <textarea className="desc" type="text" value={props.website.description}></textarea>
         </div>
         <div className="text-collapsed">
             </div>

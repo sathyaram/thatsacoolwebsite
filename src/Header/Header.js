@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Form from '../Form/Form';
 import './Header.scss'
 
 class Header extends Component {

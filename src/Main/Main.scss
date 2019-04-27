@@ -1,7 +1,7 @@
 main { 
   width: calc(100% - 80px);
   margin-left: 80px;
-  height:100vh;
+  // height:100vh;
 
   @media screen and (max-width: 700px) {
     width: 100%;
@@ -13,8 +13,8 @@ main {
   > div {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    flex-flow: column wrap;
+    // align-content: flex-start;
+    // flex-flow: column wrap;
     height: 100%;
     width: auto;
   }

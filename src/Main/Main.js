@@ -21,13 +21,24 @@ class Main extends Component {
     edit.classList.toggle("editable");
   };
 
+  randomize = (array) => {
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+  };
+
   render() {
     return (
       <main>
         <div>
-          {myData.map(website => (
-            <Article website={website} newColor={this.state.newColor} />
-          ))}
+          {this.randomize(myData.map((website, i) => (
+            <Article key={i} website={website} newColor={this.state.newColor} />
+          )))}
         </div>
       </main>
     );
