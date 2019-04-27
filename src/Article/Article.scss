@@ -21,19 +21,28 @@ article {
   
 
   @media screen and (min-width: 2250px) {
-    width: 20%;
+    flex-basis: 17%;
+    &:hover {
+      flex-basis: 17%;
+    }
   }
 
   @media screen and (min-width: 1920px) {
-    width: 25%;
+    flex-basis: 22%;
+    &:hover {
+      flex-basis: 22%;
+    }
   }
 
   @media screen and (max-width: 1200px) {
-    width: 50%;
+    flex-basis: 43%;
+    &:hover {
+      flex-basis: 43%;
+    }
   }
 
   @media screen and (max-width: 800px) {
-    width: 100%;
+    flex-basis: 100%;
   }
 
   .logged-in {
