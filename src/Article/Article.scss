@@ -20,6 +20,8 @@ article {
     display: table;
   }
 
+ 
+
   img {
     width: auto;
     height: 100px;
@@ -166,6 +168,8 @@ article {
     opacity: 0;
     z-index: 0;
   }
+
+  
 }
 
 .text-wrapper {
@@ -233,7 +237,8 @@ article {
   .desc {
     font-size: 16px;
     resize: none;
-    width: 50%;
+    max-width: 60%;
+    width: 100%;
     font-weight: 400;
     margin-top: 0.5rem;
     line-height: 120%;

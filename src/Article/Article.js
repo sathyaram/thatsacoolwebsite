@@ -8,7 +8,7 @@ var your_api_secret = process.env.REACT_APP_API_SECRET;
 
 const Article = props => {
   var input_url = encodeURIComponent('http://' + props.website.link);
-  var options = 'delay=5&resizeWidth=400&resizeHeight=300';
+  var options = 'delay=7&resizeWidth=400&resizeHeight=300';
   var full_url = input_url + '&' + options;
   var hash = md5(your_api_secret + 'url=' + full_url);
 
@@ -25,9 +25,8 @@ const Article = props => {
         </div>
         <div className="text-shown">
           <div className="title">{props.website.name}</div>
-          <div className="desc">{props.website.description} </div>
-        </div>
-        <div className="text-collapsed" />
+          <div className="desc">{props.website.description}</div>
+        </div>    
       </div>
       <img src={result_img_url} alt={props.website.name} />
     </article>
