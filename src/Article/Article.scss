@@ -1,27 +1,39 @@
 article {
-  width: 32.333333%;
-  flex: 1 0 30%;
-  height: 18%;
+  height:auto;
+  padding: 7% 0;
   position: relative;
   display: flex;
-  // width: 33.33333333%;
-  // flex: 1 0 17.5%;
-  // position: relative;
-  // display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 300ms ease;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background: yellow;
   text-decoration: none;
   color: black;
   transition: all 300ms ease;
-  
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  img {
+    width: auto;
+    height: 100px;
+    bottom: -20px;
+    right: 20px;
+    position: absolute;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    transition: transform 300ms ease;
+  }
+
 
   @media screen and (min-width: 2250px) {
     flex-basis: 17%;
+
     &:hover {
       flex-basis: 17%;
     }
@@ -29,6 +41,8 @@ article {
 
   @media screen and (min-width: 1920px) {
     flex-basis: 22%;
+
+
     &:hover {
       flex-basis: 22%;
     }
@@ -36,6 +50,9 @@ article {
 
   @media screen and (max-width: 1200px) {
     flex-basis: 43%;
+    width: 43%;
+
+
     &:hover {
       flex-basis: 43%;
     }
@@ -45,9 +62,9 @@ article {
     flex-basis: 100%;
   }
 
-  .logged-in {
-    display: none;
-  }
+  // .logged-in {
+  //   display: none;
+  // }
 
   &.editable {
     flex: 9 2 13%;
@@ -56,10 +73,11 @@ article {
       pointer-events: none;
     }
 
-    input:not([type="color"]), textarea {
+    input:not([type="color"]),
+    textarea {
       border: 1px solid paleturquoise;
-      margin-top: 5px;
-      padding:4px 10px;
+      margin: 5px;
+      padding: 4px 10px;
     }
 
     .controls {
@@ -75,7 +93,9 @@ article {
 
 
   &:hover {
-    flex: 9 2 17.5%;
+    // flex: 9 2 17.5%;
+    padding:12% 0;
+
     .controls {
       transform: translateY(-50%) translateX(0px);
       opacity: 1;
@@ -90,14 +110,21 @@ article {
       opacity: 1;
     }
 
-    input.category {
+    .category {
       letter-spacing: 3px;
+    }
+
+    img {
+      transform: translateY(-20px);
     }
   }
 
 
   &.white {
-    input, textarea {
+
+    input,
+    textarea,
+    div {
       color: white;
     }
   }
@@ -110,7 +137,7 @@ article {
     z-index: 99;
     right: 10px;
     transform: rotate(-45deg);
-    text-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     color: black;
     opacity: 0;
     font-weight: bold;
@@ -127,17 +154,18 @@ article {
   top: 0;
   left: 0;
   opacity: 1;
+  z-index: 3;
 
   &::before {
-    content:'';
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     transition: all 500ms ease;
-    background:rgba(0,0,0,0.2);
-    opacity:0;
-    z-index:0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: 0;
   }
 }
 
@@ -149,10 +177,11 @@ article {
   width: 100%;
   height: 100%;
   padding: 10px 25px;
+  z-index: 2;
 
   .text-shown {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
     input {
@@ -172,16 +201,18 @@ article {
   .text-above {
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
 
-  input[type='text'], textarea {
+  input[type='text'],
+  textarea {
     background: none;
     border: none;
     outline: none;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 5px;
     transition: all 300ms ease;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     font-family: 'Barlow', sans-serif;
     // text-shadow:0 0 5px rgba(0, 0, 0, 0.3);
   }
@@ -189,36 +220,32 @@ article {
   .title {
     font-size: 40px;
     font-weight: 400;
-    height: 50px;
+    margin-top: 0.5rem;
   }
 
   .link {
-    font-size:14px;
-    font-weight:700;
-    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
     text-align: right;
-    width: 50%;
     opacity: 0;
     transition: all 300ms ease;
   }
 
-  textarea {
+  .desc {
     font-size: 16px;
-    height: 30px;
     resize: none;
-    height: 45px;
-    width: 100%;
-    overflow: hidden;
+    width: 50%;
     font-weight: 400;
+    margin-top: 0.5rem;
+    line-height: 120%;
   }
 
-  input.category {
-    width: 50%;
-    font-size: 12px;
+  .category {
+    font-size: 14px;
     letter-spacing: 1px;
-    margin-bottom: -6px;
     font-weight: 600;
     text-transform: uppercase;
+    transition: letter-spacing 300ms ease;
   }
 
   input[type='color'] {
@@ -228,7 +255,7 @@ article {
     margin: 0;
     outline: none;
     border: none;
-    height:25px;
+    height: 25px;
     padding: 0 5px;
     border-radius: 5px;
     background: white;
@@ -248,15 +275,15 @@ article {
   justify-content: space-between;
 
   button {
-    border:none;
-    cursor:pointer;
-    padding:5px 10px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
     background: white;
     color: #00446e;
     font-family: "Work Sans" !important;
     transition: all 300ms ease;
-    border-radius:10px;
-    box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
     &:not(:first-child) {
       margin-top: 10px;
@@ -266,17 +293,18 @@ article {
 
 @keyframes spin {
   0% {
-    
+
     top: 5px;
     right: 10px;
   }
+
   50% {
     top: -11px;
     right: -6px;
   }
 
   100% {
-    
+
     top: 5px;
     right: 10px;
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Article from "../Article/Article";
 import "./Main.scss";
-import myData from "./websites.json";
+import myData from "./../websites.json";
 
 class Main extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class Main extends Component {
       <main>
         <div>
           {this.randomize(myData.map((website, i) => (
-            <Article key={i} website={website} newColor={this.state.newColor} />
+            <Article edit={this.editText} key={i} website={website} newColor={this.state.newColor} />
           )))}
         </div>
       </main>

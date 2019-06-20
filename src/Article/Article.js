@@ -1,59 +1,35 @@
-import "./Article.scss";
-import React from "react";
+import './Article.scss';
+import React from 'react';
+import md5 from 'md5';
+
+var API_URL = 'https://cdn.capture.techulus.in/';
+var your_api_key = process.env.REACT_APP_API_KEY;
+var your_api_secret = process.env.REACT_APP_API_SECRET;
 
 const Article = props => {
-  return (
-    <article
-      className={"website " + props.website.class}
-      style={{ backgroundColor: `${props.website.color}` }}
-    >
-      <a
-        className="website-wrapper"
-        href={"http://" + props.website.link}
-        target="_blank"
-        rel="noopener noreferrer"
-      />
-      <div className="text-wrapper">
-          <div className="text-above">
-            <input
-              className="category"
-              type="text"
-              list="cats"
-              value={props.website.category}
-            />
-            <datalist id="cats">
-              <option value="Functionality" />
-              <option value="Web Design" />
-              <option value="Agency" />
-              <option value="Company" />
-            </datalist>
-            {/* <input
-              className="color logged-in"
-              type="color"
-              name="colorpicker"
-              value={props.website.color}
-            /> */}
-            <input className="link" type="text" value={props.website.link} />
+  var input_url = encodeURIComponent('http://' + props.website.link);
+  var options = 'delay=5&resizeWidth=400&resizeHeight=300';
+  var full_url = input_url + '&' + options;
+  var hash = md5(your_api_secret + 'url=' + full_url);
 
+  // Image URL
+  var result_img_url = API_URL + your_api_key + '/' + hash + '/image?url=' + full_url;
+
+  return (
+    <article className={'website ' + props.website.class} style={{ backgroundColor: `${props.website.color}` }}>
+      <a className="website-wrapper" href={'http://' + props.website.link} target="_blank" rel="noopener noreferrer"></a>
+      <div className="text-wrapper">
+        <div className="text-above">
+          <div className="category">{props.website.category}</div>
+          <div className="link">{props.website.link}</div>
         </div>
         <div className="text-shown">
-          <input className="title" type="text" value={props.website.name} />
-          <textarea className="desc" type="text" value={props.website.description}></textarea>
+          <div className="title">{props.website.name}</div>
+          <div className="desc">{props.website.description} </div>
         </div>
-        <div className="text-collapsed">
-            </div>
+        <div className="text-collapsed" />
       </div>
-      <div className="controls logged-in">
-        <button className="save">
-          <i className="fas fa-save" />
-        </button>
-        <button className="edit">
-          <i className="fas fa-edit" />
-        </button>
-        <button className="delete">
-          <i className="fas fa-trash" />
-        </button>
-      </div>
+      <img src={result_img_url} alt={props.website.name} />
     </article>
   );
 };
