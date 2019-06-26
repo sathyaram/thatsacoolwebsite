@@ -5,7 +5,7 @@
     "color": "#161f2d",
     "category": "Media",
     "description": "An engaging, well layed out news site with crisp lines",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Sean Halpin",
@@ -13,7 +13,7 @@
     "color": "#12d7a0",
     "category": "Web Designer",
     "description": "Elegant, flat design and great palette.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Taproot",
@@ -21,7 +21,7 @@
     "color": "#ea5f3d",
     "category": "Agency",
     "description": "Beautiful case studies and overall website design",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Wewe Liu",
@@ -29,7 +29,7 @@
     "color": "#145d55",
     "category": "Freelancer",
     "description": "Great hero section, great use of scroll revealing ",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Melanie F",
@@ -51,7 +51,7 @@
     "color": "#7c2580",
     "category": "Agency",
     "description": "Brilliant agency and blog. Industry defining work and tech.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Claudio Calautti",
@@ -59,7 +59,7 @@
     "color": "teal",
     "category": "Developer",
     "description": "Awesome Creative Javascript Animator",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Jenny Johannesson",
@@ -67,7 +67,7 @@
     "color": "#fc0564",
     "category": "Web/UI Designer",
     "description": "Unbelievable clients and work.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Nathan Riley",
@@ -75,7 +75,7 @@
     "color": "#1a1a1a",
     "category": "Designer",
     "description": "Unbelievable clients and work.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Gal Shir",
@@ -97,7 +97,7 @@
     "color": "#1880a8",
     "category": "UI Developer",
     "description": "Unbelievable clients and work.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Push10",
@@ -119,7 +119,7 @@
     "color": "#131346",
     "category": "Freelancer",
     "description": "Unbelievable clients and work.",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Fantasy",
@@ -127,7 +127,7 @@
     "color": "#fb0c05",
     "category": "Agency",
     "description": "God-tier design work",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Noodle.ai",
@@ -170,7 +170,7 @@
     "color": "#e9168c",
     "category": "Agency",
     "description": "Next level designs and development",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Jennifer Heintz",
@@ -178,7 +178,7 @@
     "color": "#018d52",
     "category": "Designer",
     "description": "Wacky designer and  illustrator, distinctive splash screen",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Rafael Caferati",
@@ -186,7 +186,7 @@
     "color": "#2f2f2f",
     "category": "Full Stack Developer",
     "description": "Super cool site with a CSS/JS game, very fun!",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Ben Davidson",
@@ -194,7 +194,7 @@
     "color": "#b00e23",
     "category": "Full Stack Developer",
     "description": "Very modern, geometric site with moving components",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Ologie",
@@ -202,7 +202,7 @@
     "color": "#f47c20",
     "category": "Agency",
     "description": "Clean agency with clean work",
-    "class": "white"
+    "textcolor": "white"
   },
   {
     "name": "Build in Amsterdam",
@@ -210,6 +210,6 @@
     "color": "#171719",
     "category": "Agency",
     "description": "An innovative design shop",
-    "class": "white"
+    "textcolor": "white"
   }
 ]

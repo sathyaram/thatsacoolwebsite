@@ -11,8 +11,8 @@ header {
   color: white;
   padding: 15px 10px;
   flex-direction: column;
-  box-shadow: 0 0 35px rgba(0,0,0,0.1),
-  0 0 35px rgba(0,0,0,0.1),0 0 35px rgba(0,0,0,0.1);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1), 0 0 35px rgba(0, 0, 0, 0.1),
+    0 0 35px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 700px) {
     width: 100%;
@@ -35,7 +35,6 @@ header {
     }
   }
 
-
   .addWebsite {
     position: absolute;
     bottom: 30px;
@@ -45,40 +44,36 @@ header {
     @media screen and (max-width: 700px) {
       display: none;
     }
-    
+
     &:hover form {
       opacity: 1;
       pointer-events: auto;
     }
 
-  .addThis {
-    border: 2px solid white;
-    padding: 32px 25px;
-    padding: 25px 18px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 50px;
-    background: rgba(8, 132, 214, 0.4);
-    cursor: pointer;
-    box-shadow: 2px 2px 0px 0 rgb(25, 222, 248),
-                  4px 4px 0px 0 rgb(255, 29, 135),
-                  6px 6px 0px 0 rgb(206, 255, 29);
-    
-  }
+    .addThis {
+      border: 2px solid white;
+      padding: 32px 25px;
+      padding: 25px 18px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 50px;
+      background: rgba(8, 132, 214, 0.4);
+      cursor: pointer;
+      box-shadow: 2px 2px 0px 0 rgb(25, 222, 248),
+        4px 4px 0px 0 rgb(255, 29, 135), 6px 6px 0px 0 rgb(206, 255, 29);
+    }
   }
 
   i {
     color: white;
-    
   }
 
   .logo {
-    text-shadow: -2px -2px 0px rgb(25, 222, 248),
-    2px 2px 0px rgb(255, 29, 135),
-    4px 4px 0px rgb(206, 255, 29);
+    text-shadow: -2px -2px 0px rgb(25, 222, 248), 2px 2px 0px rgb(255, 29, 135),
+      4px 4px 0px rgb(206, 255, 29);
     margin-bottom: -8px;
     margin-left: -12px;
     font-size: 36px;
@@ -88,12 +83,11 @@ header {
       margin-left: -2px;
     }
   }
-  
+
   .home {
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 0px rgb(25, 222, 248);
-
   }
 
   h1 {
@@ -101,12 +95,13 @@ header {
     padding-top: 10px;
     text-transform: uppercase;
     font-weight: 600;
+    text-shadow: -1px -1px 0px #19def8, 1px 1px 0px #ff1d87, 1.5px 1.5px 0px #ceff1d;
 
     @media screen and (max-width: 700px) {
       padding-top: 0;
       text-align: left;
     }
-  
+
     span {
       display: block;
     }
@@ -125,7 +120,7 @@ header {
 
   nav {
     left: 0px;
-    width:100%;
+    width: 100%;
     padding-top: 30px;
 
     @media screen and (max-width: 700px) {
@@ -139,7 +134,7 @@ header {
       text-align: center;
 
       li {
-        margin-bottom:5px;
+        margin-bottom: 5px;
         width: 100%;
 
         a {
@@ -156,7 +151,7 @@ header {
           text-transform: uppercase;
 
           &:hover {
-            background: rgba(8, 132, 214, 0.9);  
+            background: rgba(8, 132, 214, 0.9);
           }
         }
 
@@ -170,7 +165,7 @@ header {
           a {
             background: white;
             color: rgb(85, 85, 223);
-            padding: 10px; 
+            padding: 10px;
           }
         }
       }
@@ -181,33 +176,28 @@ header {
 @keyframes bling {
   0% {
     color: white;
-    text-shadow: -2px -2px 0px rgb(25, 222, 248),
-    2px 2px 0px rgb(255, 29, 135),
-    4px 4px 0px rgb(206, 255, 29);
+    text-shadow: -2px -2px 0px rgb(25, 222, 248), 2px 2px 0px rgb(255, 29, 135),
+      4px 4px 0px rgb(206, 255, 29);
   }
   15% {
     color: rgb(206, 255, 29);
-    text-shadow: -2px -2px 0px white,
-    2px 2px 0px rgb(25, 222, 248),
-    4px 4px 0px rgb(255, 29, 135);
+    text-shadow: -2px -2px 0px white, 2px 2px 0px rgb(25, 222, 248),
+      4px 4px 0px rgb(255, 29, 135);
   }
   30% {
     color: rgb(255, 29, 135);
-    text-shadow: -2px -2px 0px rgb(206, 255, 29),
-    2px 2px 0px white,
-    4px 4px 0px rgb(151, 234, 245);
+    text-shadow: -2px -2px 0px rgb(206, 255, 29), 2px 2px 0px white,
+      4px 4px 0px rgb(151, 234, 245);
   }
 
   45% {
     color: rgb(151, 234, 245);
-    text-shadow: -2px -2px 0px rgb(255, 29, 135),
-    2px 2px 0px rgb(206, 255, 29),
-    4px 4px 0px white;
+    text-shadow: -2px -2px 0px rgb(255, 29, 135), 2px 2px 0px rgb(206, 255, 29),
+      4px 4px 0px white;
   }
   60% {
     color: white;
-    text-shadow: -2px -2px 0px rgb(25, 222, 248),
-    2px 2px 0px rgb(255, 29, 135),
-    4px 4px 0px rgb(206, 255, 29);
+    text-shadow: -2px -2px 0px rgb(25, 222, 248), 2px 2px 0px rgb(255, 29, 135),
+      4px 4px 0px rgb(206, 255, 29);
   }
 }

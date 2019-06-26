@@ -16,15 +16,15 @@ const Article = props => {
   var result_img_url = API_URL + your_api_key + '/' + hash + '/image?url=' + full_url;
 
   return (
-    <article className={'website ' + props.website.class ? props.website.class : ''} style={{ backgroundColor: `${props.website.color}` }}>
+    <article className="website" style={{ backgroundColor: props.website.color }}>
       <a className="website-wrapper" href={'http://' + props.website.link} target="_blank" rel="noopener noreferrer">
         <div className="eyebrow">
-          <div className="category">{props.website.category}</div>
-          <div className="link">{props.website.link}</div>
+          <div className="category" style={{color: props.website.textcolor}}>{props.website.category}</div>
+          <div className="link" style={{color: props.website.textcolor}}>{props.website.link}</div>
         </div>
-        <div className="title">{props.website.name}</div>
+        <div className="title" style={{color: props.website.textcolor}}>{props.website.name}</div>
         <div className="info">
-          <div className="desc">{props.website.description}</div>
+          <div className="desc" style={{color: props.website.textcolor}}>{props.website.description}</div>
           <img className="image" src={result_img_url} alt={props.website.name} />
         </div>
       </a>
