@@ -2,9 +2,10 @@
   {
     "name": "PBS News Hour",
     "link": "pbs.org/newshour",
-    "color": "yellow",
+    "color": "#161f2d",
     "category": "Media",
-    "description": "An engaging, well layed out news site with crisp lines"
+    "description": "An engaging, well layed out news site with crisp lines",
+    "class": "white"
   },
   {
     "name": "Sean Halpin",

@@ -17,18 +17,17 @@ const Article = props => {
 
   return (
     <article className={'website ' + props.website.class ? props.website.class : ''} style={{ backgroundColor: `${props.website.color}` }}>
-      <a className="website-wrapper" href={'http://' + props.website.link} target="_blank" rel="noopener noreferrer"></a>
-      <div className="text-wrapper">
-        <div className="text-above">
+      <a className="website-wrapper" href={'http://' + props.website.link} target="_blank" rel="noopener noreferrer">
+        <div className="eyebrow">
           <div className="category">{props.website.category}</div>
           <div className="link">{props.website.link}</div>
         </div>
-        <div className="text-shown">
-          <div className="title">{props.website.name}</div>
+        <div className="title">{props.website.name}</div>
+        <div className="info">
           <div className="desc">{props.website.description}</div>
+          <img className="image" src={result_img_url} alt={props.website.name} />
         </div>
-      </div>
-      <img src={result_img_url} alt={props.website.name} />
+      </a>
     </article>
   );
 };
