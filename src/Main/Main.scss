@@ -12,15 +12,45 @@ main {
 
   .col {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 33.3333333%;
     flex-direction: column;
 
-    @media screen and (max-width: 1400px) {
-      flex-basis: 50%;
+    @media screen and (max-width: 1100px) {
+      flex-basis: 100%;
+
+      article img {
+        height: 170px;
+        right: 30px;
+      }
     }
 
     @media screen and (max-width: 700px) {
-      flex-basis: 100%;
+      article {
+        text-align: center;
+        
+        &:hover {
+          flex-basis: 40%;
+        }
+      
+        .eyebrow {
+
+          .link {
+            opacity: 1;
+          }
+        }
+
+        .info {
+          .desc {
+            margin: 0 auto;
+            margin-top: 0.5rem;
+          }
+        }
+        img {
+          position: static;
+          height: 140px;
+          margin: 20px auto 0;
+        }
+      }
     }
   }
 }

@@ -24,6 +24,7 @@ header {
   .branding {
     width: 100%;
     text-align: center;
+    font-weight: bold;
 
     @media screen and (max-width: 700px) {
       padding-top: 0;
@@ -38,36 +39,40 @@ header {
   .addWebsite {
     position: absolute;
     bottom: 30px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
 
     @media screen and (max-width: 700px) {
       display: none;
     }
     
-
-    .addThis {
-      border: 2px solid white;
-      padding: 14px 15px;
-      border-radius: 50%;
-      background: rgba(8, 132, 214, 0.4);
-      cursor: pointer;
-
-      &:hover ~ form {
-          opacity: 1;
-          transform: scale(0.8);
-          pointer-events: auto;
-        
-      }
+    &:hover form {
+      opacity: 1;
+      pointer-events: auto;
     }
 
-    i {
-      color: white;
-      text-shadow: -3px -3px 0px rgb(25, 222, 248),
-                    3px 3px 0px rgb(255, 29, 135),
-                    4px 4px 0px rgb(206, 255, 29);
-      
-    }
+  .addThis {
+    border: 2px solid white;
+    padding: 32px 25px;
+    padding: 25px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+    background: rgba(8, 132, 214, 0.4);
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0 rgb(25, 222, 248),
+                  4px 4px 0px 0 rgb(255, 29, 135),
+                  6px 6px 0px 0 rgb(206, 255, 29);
+    
+  }
+  }
+
+  i {
+    color: white;
+    
   }
 
   .logo {
@@ -77,16 +82,18 @@ header {
     margin-bottom: -8px;
     margin-left: -12px;
     font-size: 36px;
-    font-weight: bold;
+    animation: bling 3s 1s infinite step-end;
 
     @media screen and (max-width: 700px) {
-      margin-left: 0;
+      margin-left: -2px;
     }
   }
   
   .home {
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 0px rgb(25, 222, 248);
+
   }
 
   h1 {
@@ -94,7 +101,6 @@ header {
     padding-top: 10px;
     text-transform: uppercase;
     font-weight: 600;
-    // text-shadow: 2px 2px 0px rgb(25, 222, 248);
 
     @media screen and (max-width: 700px) {
       padding-top: 0;
@@ -113,6 +119,7 @@ header {
 
     @media screen and (max-width: 700px) {
       margin-top: 0;
+      font-weight: bold;
     }
   }
 
@@ -168,5 +175,39 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes bling {
+  0% {
+    color: white;
+    text-shadow: -2px -2px 0px rgb(25, 222, 248),
+    2px 2px 0px rgb(255, 29, 135),
+    4px 4px 0px rgb(206, 255, 29);
+  }
+  15% {
+    color: rgb(206, 255, 29);
+    text-shadow: -2px -2px 0px white,
+    2px 2px 0px rgb(25, 222, 248),
+    4px 4px 0px rgb(255, 29, 135);
+  }
+  30% {
+    color: rgb(255, 29, 135);
+    text-shadow: -2px -2px 0px rgb(206, 255, 29),
+    2px 2px 0px white,
+    4px 4px 0px rgb(151, 234, 245);
+  }
+
+  45% {
+    color: rgb(151, 234, 245);
+    text-shadow: -2px -2px 0px rgb(255, 29, 135),
+    2px 2px 0px rgb(206, 255, 29),
+    4px 4px 0px white;
+  }
+  60% {
+    color: white;
+    text-shadow: -2px -2px 0px rgb(25, 222, 248),
+    2px 2px 0px rgb(255, 29, 135),
+    4px 4px 0px rgb(206, 255, 29);
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Article from "../Article/Article";
-import "./Main.scss";
 import myData from "./../websites.json";
+import "./Main.scss";
 
 class Main extends Component {
 
@@ -18,10 +18,9 @@ class Main extends Component {
 
   /** returns AoA */
   splitColumns(array) {
-    const numberOfColumns = 4;
+    const numberOfColumns = 3;
     const numberOfRows = Math.ceil(array.length / numberOfColumns);
     const AoA = [];
-
 
     for (let i = 0; i < numberOfColumns; i++) {
       const beginIdx = i * numberOfRows;
@@ -40,11 +39,11 @@ class Main extends Component {
   }
 
   render() {
-    const newBiglyDatas = this.splitColumns(myData);
+    const splitData = this.splitColumns(this.randomize(myData));
     return (
       <main>
         {
-          newBiglyDatas.map(i => {
+          splitData.map(i => {
             return (
               <div class="col">
                 {
@@ -58,9 +57,6 @@ class Main extends Component {
             )
           })
         }
-        {/* {this.randomize(myData.map((website, i) => (
-            <Article edit={this.editText} key={i} website={website} />
-          )))} */}
       </main>
     );
   }
