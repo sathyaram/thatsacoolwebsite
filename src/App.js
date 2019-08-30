@@ -4,11 +4,21 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 
 class App extends Component {
+  state = {
+    selectedCategories: []
+  }
+
+  categoryChanged = (selections) => {
+    this.setState({
+      selectedCategories: selections
+    })
+  }
+
   render() {
     return (
       <>
-        <Header />
-        <Main />
+        <Header categoryChanged={this.categoryChanged}/>
+        <Main selectedCategories={this.state.selectedCategories}/>
       </>
     );
   }

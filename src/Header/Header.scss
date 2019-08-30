@@ -1,5 +1,4 @@
 header {
-  background: linear-gradient(to right, rgb(30, 113, 238), rgb(20, 151, 212));
   background: linear-gradient(to top, #00ffff, #1497d4);
   width: 80px;
   height: 100vh;
@@ -7,7 +6,7 @@ header {
   z-index: 99;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   color: white;
   padding: 15px 10px;
   flex-direction: column;
@@ -107,9 +106,9 @@ header {
     }
   }
 
-  p {
-    margin-top: 20px;
-    font-size: 10px;
+  h2 {
+    margin: 1rem 0;
+    font-size: 12px;
     font-style: italic;
 
     @media screen and (max-width: 700px) {
@@ -118,6 +117,23 @@ header {
     }
   }
 
+  .filter {
+    color: #0b83a0;
+
+    .filterTitle {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+    label {
+      font-size: 11px;
+    }
+
+    @media screen and (max-width: 700px) {
+     display: none;
+    }
+  }
   nav {
     left: 0px;
     width: 100%;

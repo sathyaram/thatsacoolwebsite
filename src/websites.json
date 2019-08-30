@@ -11,7 +11,7 @@
     "name": "Sean Halpin",
     "link": "seanhalpin.io",
     "color": "#12d7a0",
-    "category": "Web Designer",
+    "category": "Designer",
     "description": "Elegant, flat design and great palette.",
     "textcolor": "white"
   },
@@ -27,7 +27,7 @@
     "name": "Wewe Liu",
     "link": "iamliu.com/",
     "color": "#145d55",
-    "category": "Freelancer",
+    "category": "Designer",
     "description": "Great hero section, great use of scroll revealing ",
     "textcolor": "white"
   },
@@ -35,14 +35,14 @@
     "name": "Melanie F",
     "link": "melanie-f.com",
     "color": "#75bee8",
-    "category": "Freelancer",
+    "category": "Designer",
     "description": "Has a delightful charm about it, with nice colors and scrolls, ambient music"
   },
   {
     "name": "Marina Tureczek",
     "link": "marinatureczek.com",
     "color": "#b7b6ef",
-    "category": "UI Designer",
+    "category": "Designer",
     "description": "Gorgeous portfolio website all around, great scroll effects and case study work."
   },
   {
@@ -65,7 +65,7 @@
     "name": "Jenny Johannesson",
     "link": "jennyjohannesson.com",
     "color": "#fc0564",
-    "category": "Web/UI Designer",
+    "category": "Designer",
     "description": "Unbelievable clients and work.",
     "textcolor": "white"
   },
@@ -95,7 +95,7 @@
     "name": "Tobias Ahlin",
     "link": "tobiasahlin.com",
     "color": "#1880a8",
-    "category": "UI Developer",
+    "category": "Developer",
     "description": "Unbelievable clients and work.",
     "textcolor": "white"
   },
@@ -110,14 +110,14 @@
     "name": "Rogie",
     "link": "rog.ie",
     "color": "#df90ea",
-    "category": "Freelancer",
+    "category": "Developer",
     "description": "Unbelievable clients and work."
   },
   {
     "name": "WeAreFine",
     "link": "wearefine.com",
     "color": "#131346",
-    "category": "Freelancer",
+    "category": "Agency",
     "description": "Unbelievable clients and work.",
     "textcolor": "white"
   },
@@ -140,7 +140,7 @@
     "name": "Marion Serenio",
     "link": "marionserenio.com",
     "color": "#eee197",
-    "category": "UI/UX Designer",
+    "category": "Designer",
     "description": "Wicked innovative and talented designer"
   },
   {
@@ -161,7 +161,7 @@
     "name": "Fabian Irsara",
     "link": "fabianirsara.com",
     "color": "#b2a578",
-    "category": "UI Developer",
+    "category": "Developer",
     "description": "Incredible developer, designer, and photographer"
   },
   {
@@ -184,7 +184,7 @@
     "name": "Rafael Caferati",
     "link": "caferati.me",
     "color": "#2f2f2f",
-    "category": "Full Stack Developer",
+    "category": "Developer",
     "description": "Super cool site with a CSS/JS game, very fun!",
     "textcolor": "white"
   },
@@ -192,7 +192,7 @@
     "name": "Ben Davidson",
     "link": "milkisnice.com",
     "color": "#b00e23",
-    "category": "Full Stack Developer",
+    "category": "Developer",
     "description": "Very modern, geometric site with moving components",
     "textcolor": "white"
   },

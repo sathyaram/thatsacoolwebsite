@@ -39,7 +39,11 @@ class Main extends Component {
   }
 
   render() {
-    const splitData = this.splitColumns(this.randomize(myData));
+    let filterData = myData;
+    if (this.props.selectedCategories.length > 0) {
+      filterData = myData.filter((w) => this.props.selectedCategories.includes(w.category));
+    }
+    const splitData = this.splitColumns(this.randomize(filterData));
     return (
       <main>
         {
