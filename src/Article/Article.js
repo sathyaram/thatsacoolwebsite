@@ -25,7 +25,7 @@ const Article = props => {
         <div className="title" style={{color: props.website.textcolor}}>{props.website.name}</div>
         <div className="info">
           <div className="desc" style={{color: props.website.textcolor}}>{props.website.description}</div>
-          <img className="image" src={result_img_url} alt={props.website.name} />
+          {/* <img className="image" src={result_img_url} alt={props.website.name} /> */}
         </div>
       </a>
     </article>
